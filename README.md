@@ -7,6 +7,13 @@ Grand Theft Vault는 자바 Swing/AWT 기반으로 제작된 게임 프로젝트
 - 주요 기술: Java AWT / Swing (GUI 구성 및 이벤트 처리)
 - 핵심 기능: 랜덤 정답 생성, 입력값 판별 로직(Correct/Miss), 프레임 전환 및 결과 출력
 
+🎮 게임 룰 (Rules)
+
+3자리 비밀번호 추론: 컴퓨터가 지정한 중복 가능한 3자리 숫자를 맞춥니다.   
+Correct & Miss:Correct: 숫자와 위치가 모두 맞은 경우   
+Miss: 숫자는 맞지만 위치가 틀린 경우   
+기회 제한: 총 10번의 기회가 주어지며, 시도할 때마다 Life(하트)가 감소합니다[cite: 1].
+
 📁 프로젝트 구조 (Directory Structure)
 
 └── src/ <br>
@@ -27,9 +34,4 @@ Grand Theft Vault는 자바 Swing/AWT 기반으로 제작된 게임 프로젝트
 - Player.java (게임 로직 및 비교): 플레이어 입력값을 전달받아 컴퓨터 정답과 비교하여 Correct(Strike) / Miss(Ball) / Out을 판별합니다[cite: 3].
     
     
-🎮 게임 룰 (Rules)
 
-3자리 비밀번호 추론: 컴퓨터가 지정한 중복 가능한 3자리 숫자를 맞춥니다.   
-Correct & Miss:Correct: 숫자와 위치가 모두 맞은 경우   
-Miss: 숫자는 맞지만 위치가 틀린 경우   
-    기회 제한: 총 10번의 기회가 주어지며, 시도할 때마다 Life(하트)가 감소합니다[cite: 1].
