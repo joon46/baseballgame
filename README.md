@@ -32,6 +32,8 @@ Miss: 숫자는 맞지만 위치가 틀린 경우
         └── Btnadapter4.java  # 3자리 입력 완료 시 자동 제출(클릭) 처리 이벤트 리스너 <br>
 
 🛠️ 주요 클래스별 역할
+
+### baseball
 - BaseMain.java (메인 실행 클래스): 프로그램의 시작점(main 메서드)으로 StartFrame을 호출하여 게임을 실행합니다.   
 - BaseFrame.java (기본 UI 프레임): GUI 창의 공통 크기, 배경색, 레이아웃 등 기본 틀을 정의하는 클래스입니다.
 - StartFrame.java (시작 화면 UI): 메인 배경 이미지, 시작 버튼, 종료 버튼 등을 배치하는 시작 화면입니다.
@@ -39,12 +41,9 @@ Miss: 숫자는 맞지만 위치가 틀린 경우
 - Cpu.java (정답 생성): Random 클래스를 활용하여 플레이어가 맞춰야 할 3자리 난수를 생성합니다.
 - Player.java (게임 로직 및 비교): 플레이어 입력값을 전달받아 컴퓨터 정답과 비교하여 Correct(Strike) / Miss(Ball) / Out을 판별합니다[cite: 3].
 
-- BaseMain.java : 프로그램의 시작점(main)으로 StartFrame을 호출하여 게임을 실행.
-- BaseFrame.java : GUI 창의 공통 크기, 배경색, 레이아웃 등 기본 틀을 정의하는 공통 프레임 클래스
-- StartFrame.java : 메인 배경 이미지와 시작/종료 버튼을 배치하는 초기 화면 GUI
-- Start_ButtonLisner.java : 시작 버튼 클릭 시 시작 창을 숨기고 룰 설명 창으로 전환하는 이벤트를 처리.
+### frame
+
 - Cpu.java : 첫 자리에 0이 오지 않도록 제어하며 플레이어가 맞출 3자리 난수를 생성
-- Player.java : 플레이어가 입력한 숫자를 전달받아 정답과 비교하고 결과를 반환하는 핵심 게임 로직을 담당
 - Btnadapter.java : 입력창의 글자 수를 실시간으로 감지하여 3자리 입력 시에만 버튼을 활성화하고 4자리 이상 입력을 제한
 - Btnadapter2.java : 정답 비교 판정(Correct/Miss), 기회 차감, 하트/점수 업데이트 및 성공·실패 결과 창을 띄움
 - Btnadapter3.java : 난수 재생성, 기회 초기화, 텍스트 상자 및 하트 포인트 원상복구 등 게임 재시작(리셋)을 처리
