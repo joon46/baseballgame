@@ -17,19 +17,19 @@ Miss: 숫자는 맞지만 위치가 틀린 경우
 📁 프로젝트 구조 (Directory Structure)
 
 └── src/ <br>
-    └── baseball/                  # 통합 및 개선된 자바 소스 코드 패키지[cite: 2, 3, 4, 5, 6, 7] <br>
-        ├── BaseMain.java          # 메인 실행 클래스 <br>
-        ├── BaseFrame.java         # 기본 UI 프레임 설정 <br>
-        ├── StartFrame.java        # 시작 화면 GUI <br>
-        ├── Start_ButtonLisner.java # 시작/룰 설명 화면 이벤트 리스너 <br>
-        ├── Cpu.java               # 난수 생성 및 컴퓨터 정답 처리 <br>
-        └── Player.java            # 플레이어 입력 처리 및 정답 판별 로직 <br>
-    └── frame/ 
-        ├── Cpu.java          # 컴퓨터 비밀번호(난수) 생성 및 관리 클래스 <br>
-        ├── Btnadapter.java   # 텍스트 입력 자릿수 제한(3자리) 이벤트 리스너 <br>
-        ├── Btnadapter2.java  # 정답 비교, 판정(Correct/Miss), 기회 차감 핵심 게임 로직 <br>
-        ├── Btnadapter3.java  # 게임 재시작 및 화면 리셋(초기화) 이벤트 리스너 <br>
-        └── Btnadapter4.java  # 3자리 입력 완료 시 자동 제출(클릭) 처리 이벤트 리스너 <br>
+&ensp;    └── baseball/                  # 통합 및 개선된 자바 소스 코드 패키지[cite: 2, 3, 4, 5, 6, 7] <br>
+ &emsp;       ├── BaseMain.java          # 메인 실행 클래스 <br>
+ &emsp;       ├── BaseFrame.java         # 기본 UI 프레임 설정 <br>
+ &emsp;       ├── StartFrame.java        # 시작 화면 GUI <br>
+ &emsp;       ├── Start_ButtonLisner.java # 시작/룰 설명 화면 이벤트 리스너 <br>
+ &emsp;       ├── Cpu.java               # 난수 생성 및 컴퓨터 정답 처리 <br>
+ &emsp;       └── Player.java            # 플레이어 입력 처리 및 정답 판별 로직 <br>
+ &ensp;   └── frame/ <br>
+ &emsp;       ├── Cpu.java          # 컴퓨터 비밀번호(난수) 생성 및 관리 클래스 <br>
+ &emsp;       ├── Btnadapter.java   # 텍스트 입력 자릿수 제한(3자리) 이벤트 리스너 <br>
+ &emsp;       ├── Btnadapter2.java  # 정답 비교, 판정(Correct/Miss), 기회 차감 핵심 게임 로직 <br>
+ &emsp;       ├── Btnadapter3.java  # 게임 재시작 및 화면 리셋(초기화) 이벤트 리스너 <br>
+ &emsp;       └── Btnadapter4.java  # 3자리 입력 완료 시 자동 제출(클릭) 처리 이벤트 리스너 <br>
 
 🛠️ 주요 클래스별 역할
 
@@ -47,7 +47,11 @@ Miss: 숫자는 맞지만 위치가 틀린 경우
 - Btnadapter.java : 입력창의 글자 수를 실시간으로 감지하여 3자리 입력 시에만 버튼을 활성화하고 4자리 이상 입력을 제한
 - Btnadapter2.java : 정답 비교 판정(Correct/Miss), 기회 차감, 하트/점수 업데이트 및 성공·실패 결과 창을 띄움
 - Btnadapter3.java : 난수 재생성, 기회 초기화, 텍스트 상자 및 하트 포인트 원상복구 등 게임 재시작(리셋)을 처리
-- Btnadapter4.java : 텍스트 상자에 3자리 숫자가 모두 입력되면 버튼을 클릭하지 않아도 자동으로 제출되도록 처리  
+- Btnadapter4.java : 텍스트 상자에 3자리 숫자가 모두 입력되면 버튼을 클릭하지 않아도 자동으로 제출되도록 처리
+- ScoreLabel.java : 판정 결과에 따라 Correct(맞춤) 및 Miss(위치 틀림) 아이콘 라벨을 화면 상단에 동적으로 생성해 표시합니다.
+- HeartPoint.java : 남은 기회(10회)에 맞춰 하트 아이콘을 생성하고 차감될 때마다 하트를 화면에서 제거·갱신합니다.
+- Result.java : 게임 성공 시 출력되는 결과 창으로, 몇 회 만에 성공했는지 메시지와 성공 배경 이미지를 띄웁니다.
+- Result2.java : 게임 실패(기회 소진) 시 출력되는 결과 창으로, 실패 메시지와 실패 배경 이미지를 띄웁니다.
     
     
 
