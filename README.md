@@ -29,7 +29,13 @@ Miss: 숫자는 맞지만 위치가 틀린 경우
  &emsp;       ├── Btnadapter.java   # 텍스트 입력 자릿수 제한(3자리) 이벤트 리스너 <br>
  &emsp;       ├── Btnadapter2.java  # 정답 비교, 판정(Correct/Miss), 기회 차감 핵심 게임 로직 <br>
  &emsp;       ├── Btnadapter3.java  # 게임 재시작 및 화면 리셋(초기화) 이벤트 리스너 <br>
- &emsp;       └── Btnadapter4.java  # 3자리 입력 완료 시 자동 제출(클릭) 처리 이벤트 리스너 <br>
+ &emsp;       ├── Btnadapter4.java  # 3자리 입력 완료 시 자동 제출(클릭) 처리 이벤트 리스너 <br>
+ &emsp;       ├── Start.java           # 메인 게임 입력 및 레이아웃 화면
+ &emsp;       ├── ScoreLabel.java      # 판정 결과 아이콘 동적 UI
+ &emsp;       ├── HeartPoint.java      # 남은 기회(하트) 관리 UI
+ &emsp;       ├── Result.java          # 게임 성공 결과 화면
+ &emsp;       └── Result2.java         # 게임 실패 결과 화면
+ 
 
 🏗️ 시스템 구조 및 핵심 구현 사항
 1. 프레임 흐름 및 화면 전환 (UI & Frame Control)
